@@ -6,11 +6,11 @@ services:
     startCommand: npm start
     healthCheckPath: /status
     envVars:
-      - key: OPENAI_API_KEY
+      - key: sk-abcdef1234567890abcdef1234567890abcdef12
         sync: false
-      - key: GEMINI_API_KEY
+      - key: AQ.Ab8RN6I3N3Ckuym7_Qx-QfG1kAIA1Key_5i0MseF8M07jegEZg
         sync: false
-      - key: CHANNEL_JID
+      - key: 120363409838427367@newsletter
         sync: false
       - key: NODE_ENV
         value: production
