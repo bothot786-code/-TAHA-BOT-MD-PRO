@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: taha-khan-bot-md
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /status
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: CHANNEL_JID
+        sync: false
+      - key: NODE_ENV
+        value: production
+    disk:
+      name: taha-session
+      mountPath: /opt/render/project/src/session
+      sizeGB: 1

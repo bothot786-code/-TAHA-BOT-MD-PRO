@@ -1,0 +1,31 @@
+{
+  "name": "taha-khan-bot-md",
+  "version": "1.0.0",
+  "description": "TAHA KHAN BOT MD — Powerful WhatsApp Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": ["whatsapp-bot","taha-khan","baileys","whatsapp-md"],
+  "author": "TAHA KHAN",
+  "license": "MIT",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.21",
+    "@hapi/boom": "^10.0.1",
+    "pino": "^8.21.0",
+    "express": "^4.19.2",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "chalk": "^4.1.2",
+    "figlet": "^1.7.0",
+    "node-cron": "^3.0.3",
+    "fs-extra": "^11.2.0",
+    "qrcode": "^1.5.3",
+    "moment-timezone": "^0.5.45",
+    "translate-google": "^1.5.0",
+    "gtts": "^0.2.1"
+  },
+  "devDependencies": { "nodemon": "^3.1.4" },
+  "engines": { "node": ">=18.0.0" }
+}
