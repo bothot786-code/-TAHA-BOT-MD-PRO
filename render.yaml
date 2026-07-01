@@ -1,20 +1,20 @@
 services:
   - type: web
-    name: taha-khan-bot-md
+    name: taha-bot-md-pro
     env: node
+    region: singapore
+    plan: free
     buildCommand: npm install
-    startCommand: npm start
+    startCommand: node index.js
     healthCheckPath: /status
     envVars:
-      - key: sk-abcdef1234567890abcdef1234567890abcdef12
-        sync: false
-      - key: AQ.Ab8RN6I3N3Ckuym7_Qx-QfG1kAIA1Key_5i0MseF8M07jegEZg
-        sync: false
-      - key: 120363409838427367@newsletter
-        sync: false
       - key: NODE_ENV
         value: production
-    disk:
-      name: taha-session
-      mountPath: /opt/render/project/src/session
-      sizeGB: 1
+      - key: PORT
+        value: 3000
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: CHANNEL_JID
+        sync: false
